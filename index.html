@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ananda Mohan Collage, Mymensingh</h1>
+      <h2>Student Registration Form</h2>
+      <div class="form-wrapper">
+        <form action="">
+          <fieldset class="per_info">
+            <legend>Personal Information</legend>
+            <div class="form-item">
+              <label for="">Student Image:</label>
+              <input type="file" />
+            </div>
+            <div class="form-item">
+              <label for="Stu_Name">Student Name:</label>
+              <input type="text" name="Stu_Name" id="Stu_Name" />
+            </div>
+            <div class="form-item">
+              <label for="Father_Name">Father's Name:</label>
+              <input type="text" name="Father_Name" id="Father_Name" />
+            </div>
+            <div class="form-item">
+              <label for="Mother_Name">Mother's Name:</label>
+              <input type="text" name="Mother_Name" id="Mother_Name" />
+            </div>
+            <div class="form-item Gender">
+              <label for="Gender">Gender</label>
+              <input type="radio" name="Gender" id="male" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="Gender" id="Female" value="Female" />
+              <label for="Female">female</label>
+              <input type="radio" name="Gender" id="Other" value="Other" />
+              <label for="Other">Other</label>
+            </div>
+            <div class="form-item">
+              <label for="DOB">Date of Birth</label>
+              <input type="date" name="DOB" id="DOB" />
+            </div>
+            <div class="form-item">
+              <label for="Email">E-mail</label>
+              <input type="email" name="Email" id="Email" />
+            </div>
+            <div class="form-item">
+              <label for="label">Label</label>
+              <select name="label" id="label">
+                <option value="College">College</option>
+                <option value="bachelors">Bachelors</option>
+                <option value="masters">Masters</option>
+                <option value="Phd">Phd</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="contact">Tel/Mobile:</label>
+              <input type="tel" name="contact" id="contact" />
+            </div>
+          </fieldset>
+          <fieldset class="Per_add">
+            <legend>Present Address</legend>
+            <div class="form-item">
+              <label for="state">State: </label>
+              <input type="text" id="state" name="state" placeholder="State" />
+            </div>
+            <div class="form-item">
+              <label for="City">City: </label>
+              <input type="text" id="city" name="city" placeholder="City" />
+            </div>
+            <div class="form-item">
+              <label for="zip">Zip: </label>
+              <input type="number" id="zip" name="zip" placeholder="Zip" />
+            </div>
+            <div class="form-item">
+              <label for="contact">Tel/Mobile:</label>
+              <input
+                type="tel"
+                id="contact"
+                name="contact"
+                pattern="[0-9]{3}-[0-9]{4}[0-9]{6}"
+                placeholder="Contact Number"
+              />
+            </div>
+          </fieldset>
+          <fieldset class="Per_add">
+            <legend>Permanent Address</legend>
+
+            <div class="form-item">
+              <label for="S_PAdd">Same as Permanent Address:</label>
+              <input type="checkbox" id="S_PAdd" name="S_PAdd"/>
+            </div>
+            <div class="form-item">
+              <label for="state">State: </label>
+              <input type="text" id="state" name="state" placeholder="State" />
+            </div>
+            <div class="form-item">
+              <label for="City">City: </label>
+              <input type="text" id="city" name="city" placeholder="City" />
+            </div>
+            <div class="form-item">
+              <label for="zip">Zip: </label>
+              <input type="number" id="zip" name="zip" placeholder="Zip" />
+            </div>
+            <div class="form-item">
+              <label for="contact">Tel/Mobile:</label>
+              <input
+                type="tel"
+                id="contact"
+                name="contact"
+                pattern="[0-9]{3}-[0-9]{4}[0-9]{6}"
+                placeholder="Contact Number"
+              />
+            </div>
+          </fieldset>
+          <input type="submit" value="Registration" id="Register">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
